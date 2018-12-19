@@ -1,0 +1,81 @@
+
+#registration{
+    padding: 100px 0;
+    background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
+}
+
+.logo-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.609));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.5; */
+}
+
+.registration-form-logo-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.read-more-butt{
+    border: 1px solid #fff !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-radius: 0px !important;
+    color: #fff;
+}
+.watch-video-butt{
+    border: 1px solid #fff !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-radius: 0px !important;
+    margin-left: 5px;
+    color: #fff;
+
+
+}
+
+.register-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    background-color
+}
+
+.input:last-of-type{
+    width: 100%;
+    height: 45px;
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+}
+
+.register-acc-butt{
+    width: 100%;
+}
+
+.main-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-form form{
+    width: 65%;
+}
+
+.modern-solutions h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.modern-solutions p{
+    font-size: 40px;
+}
