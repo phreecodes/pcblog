@@ -26,9 +26,9 @@
 .inputEmail:focus{
     outline: none;
 }
-.cardSection{
-    height: 500px;
+.input::placeholder{
+    background-color: none !important;
 }
-.create_post_section{
+.cardSection{
     height: 500px;
 }

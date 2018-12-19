@@ -1,4 +1,9 @@
 
+#registrations{
+    /* padding: 100px 0; */
+    background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
+}
+
 #registration{
     padding: 100px 0;
     background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
@@ -49,7 +54,18 @@
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #fff;
+<<<<<<< HEAD
     background: rgb(255, 255, 255) !important;
+=======
+<<<<<<< HEAD
+=======
+    background: rgba(255, 255, 255, 0) !important;
+}
+.input::placeholder{
+    background-color: none;
+    color: #fff;
+>>>>>>> 4e2202d75a3c75fb10be24e46c56e6b0efc97efc
+>>>>>>> 1cdb739912085330c3bf2d76db8383d0159e32e6
 }
 
 .input:last-of-type{
