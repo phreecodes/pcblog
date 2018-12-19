@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php session_start(); ?>
 
 <div id="registrations">
@@ -10,6 +11,10 @@
   }
 
   ?>
+=======
+<div id="registrations">
+  <?php include_once "header.php" ?>
+>>>>>>> 1cac38aa5a954f1aabac67b8206f318b8bd574a9
 
 <link rel="stylesheet" href="etieyenestyle.css">
 <link rel="stylesheet" href="css/style.css">
@@ -19,12 +24,18 @@
 
 <section class=" loginSection d-flex justify-content-center align-items-center">
     <div class="divLogin ">
+<<<<<<< HEAD
     <?php
       if(isset($_SESSION['error'])) {
           echo '<div class="alert alert-danger">' . $_SESSION['error'] . '</div>';
           unset($_SESSION['error']);
       }
     ?>
+=======
+        <div class="topLogin">
+            
+        </div>
+>>>>>>> 1cac38aa5a954f1aabac67b8206f318b8bd574a9
 <form action="validate_form.php" method="POST">
     <div class="divContainer">
         <!-- <label for="inputEmail3" class=" col-form-label text-white">Username</label> -->
@@ -40,11 +51,19 @@
       <input type="password" name ="password"class="form-control input"  placeholder="Password">
     </div>
   </div>
+<<<<<<< HEAD
   <!-- <div class="form-group row">
     <div class="col-md-12 forgotText">
      <span class="text-danger lead ">Forgot password ?</span> 
     </div>
   </div> -->
+=======
+  <div class="form-group row">
+    <div class="col-md-12 forgotText">
+     <span class="text-danger lead ">Forgot password ?</span> 
+    </div>
+  </div>
+>>>>>>> 1cac38aa5a954f1aabac67b8206f318b8bd574a9
   <fieldset class="form-group">
    
       <div class="form-group row">

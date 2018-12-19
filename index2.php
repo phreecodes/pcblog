@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+include "checkSession.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +35,26 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <?php
+                        if(isset($_SESSION['error'])) {
+                            echo '<div class="alert alert-danger">' . $_SESSION['error'] . '</div>';
+                            unset($_SESSION['error']);
+                        }
+
+                        if(isset($_SESSION['message'])) {
+                            echo '<div class="alert alert-success">' . $_SESSION['message'] . '</div>';
+                            unset($_SESSION['message']);
+                        }
+                    ?>
                     <div class="register-now">
                         <i class="fa fa-desktop" style="font-size:20px; color:#fff;"></i>
                         <h4 class="ml-2 text-light">Register Now</h4>
                     </div>
                     <div class="main-form">
-                        <form action="">
+                        <form action="validation.php" method="POST">
                             <input type="text" name="firstname" placeholder="First Name" class="input">
                             <input type="text" name="lastname" placeholder="Last Name" class="input">
+                            <input type="text" name="username" placeholder="Username" class="input">
                             <input type="text" name="email" placeholder="Email" class="input">
                             <input type="text" name="phonenumber" placeholder="Phone Number" class="input">
                             <input type="text" name="password" placeholder="Password" class="input">
