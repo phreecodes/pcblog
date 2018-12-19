@@ -54,6 +54,14 @@
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #fff;
+<<<<<<< HEAD
+=======
+    background: rgba(255, 255, 255, 0) !important;
+}
+.input::placeholder{
+    background-color: none;
+    color: #fff;
+>>>>>>> 4e2202d75a3c75fb10be24e46c56e6b0efc97efc
 }
 
 .input:last-of-type{
