@@ -3,12 +3,12 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "root";
-// $dbName = "project_create";
+$serverPassword = "root";
+$dbName = "pcblog";
 
 try{
     
-    $conn = new PDO("mysql:host=$servername;", $username, $password);
+    $conn = new PDO("mysql:host=$servername; dbname=$dbName", $username, $serverPassword);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
 catch(PDOException $e){
