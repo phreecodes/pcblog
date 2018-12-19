@@ -1,4 +1,9 @@
 
+#registrations{
+    /* padding: 100px 0; */
+    background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
+}
+
 #registration{
     padding: 100px 0;
     background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
@@ -49,7 +54,6 @@
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #fff;
-    background-color
 }
 
 .input:last-of-type{
