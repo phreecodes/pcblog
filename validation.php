@@ -14,10 +14,10 @@ $confirmPassword = $_POST['confirmpassword'];
 
 // include('connection.php');
 
-// $_SESSION['errors'] = [];
-$_SESSION['user_id'] = $_GET['id'];
-var_dump($_SESSION['user_id']);
-exit;
+// // $_SESSION['errors'] = [];
+// $_SESSION['user_id'] = $_GET['id'];
+// var_dump($_SESSION['user_id']);
+// exit;
 
 if(empty($firstName)){
     $_SESSION['error'] = "Please input first name";
