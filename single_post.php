@@ -1,4 +1,13 @@
-<?php include "header.php" ?>
+<?php include "header.php";
+include_once("connection.php");
+$id = $_GET['id'];
+$getContent = "SELECT * FROM posts WHERE id = $id";
+$result = $conn->query($getContent);
+$posts = $result->fetchAll(PDO::FETCH_ASSOC);
+foreach($posts as $key=>$post)
+$getUser = "SELECT * FROM users"
+?>
+
 <section role="main" class="container">
     <div class="row">
         <div class="col-md-8 blog-main">
@@ -8,7 +17,7 @@
 
             <div class="blog-post">
                 <h2 class="blog-post-title"><?=$post['title']; ?></h2>
-                <p class="blog-post-meta"><?=date("M d, Y", strtotime($post['date_added'])); ?> by <a href="//twiter.com/EkanemEvidence?=09">Evidoski</a></p>
+                <p class="blog-post-meta"><?=date("M d, Y", strtotime($post['post_date'])); ?> by <a href="//twiter.com/EkanemEvidence?=09">Evidoski</a></p>
 
                 <p>
                     <?=$post['content']; ?>

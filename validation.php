@@ -4,7 +4,6 @@ session_start();
 
 include('connection.php');
 
-
 $firstName = $_POST['firstname'];
 $lastName = $_POST['lastname'];
 $userName = $_POST['username'];
@@ -16,7 +15,9 @@ $confirmPassword = $_POST['confirmpassword'];
 // include('connection.php');
 
 // $_SESSION['errors'] = [];
-
+$_SESSION['user_id'] = $_GET['id'];
+var_dump($_SESSION['user_id']);
+exit;
 
 if(empty($firstName)){
     $_SESSION['error'] = "Please input first name";
@@ -107,6 +108,7 @@ if($password !== $confirmPassword){
 $checkUser = "SELECT * FROM users WHERE username = '$userName'";
 $result = $conn->query($checkUser);
 $user = $result->fetch(PDO::FETCH_ASSOC);
+
 
 if($user){
     $_SESSION['error'] = "Username already exists. Please choose a different username";

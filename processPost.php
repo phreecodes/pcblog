@@ -3,6 +3,7 @@ session_start();
 
 $title = $_POST['title'];
 $content = $_POST['content'];
+$user_id = $_SESSION['username'];
 
 if (empty($title)) {
 	$_SESSION['error'] = "Title cannot be empty";
@@ -16,12 +17,12 @@ if (empty($content)) {
 	exit;
 }
 
-include "connect.php";
+include ("connection.php");
 
 $content = $conn->quote($content);
 $title = $conn->quote($title);
 
-$sql = "INSERT INTO posts VALUES(null, $title, $content, NOW())";
+$sql = "INSERT INTO posts VALUES(null, $title, $content, '$user_id', NOW())";
 
 $result = $conn->exec($sql);
 

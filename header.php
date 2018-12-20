@@ -1,3 +1,5 @@
+<?php include('functions.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <?php
-session_start();
 ?>
 <body>
     <section class="container"><!-- HEADER-->
@@ -23,9 +24,25 @@ session_start();
             <!-- <i class="fa fa-btc" height=""></i> -->
             <a class="navbar-brand ml-2 font-weight-bold" href="#">BLOG</a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <?php if(isLoggedIn()){
+                echo '<p class="mt-3"> Welcome ' . $_SESSION["username"] . '</p>';
+                echo '
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><input type="submit" class="btn btn-primary" value="Log In"></a>
+                    <a class="nav-link" href="cardPost.php"><input type="submit" class="btn btn-dark" value="View Posts"></a>
                 </li>
+                ';
+
+                echo '<li class="nav-item active">
+                <a class="nav-link" href="logout.php"><input type="submit" class="btn btn-danger" value="Log Out"></a>
+            </li>';
+            
+            }
+            else{
+                echo '<li class="nav-item active">
+                <a class="nav-link" href="index2.php"><input type="submit" class="btn btn-primary" value="Register"></a>
+            </li>';
+            } ?>
+                
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

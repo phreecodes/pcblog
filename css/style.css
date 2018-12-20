@@ -1,12 +1,15 @@
 
 #registrations{
-    /* padding: 100px 0; */
     background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
 }
 
 #registration{
-    padding: 100px 0;
     background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(../images/red-back.jpg);
+}
+
+.registration{
+    padding: 60px 0;
+
 }
 
 .logo-img{
@@ -54,26 +57,14 @@
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #fff;
-<<<<<<< HEAD
     background-color: rgb(255, 255, 255) !important;
     /* background: rgba(255, 255, 255, 0) !important; */
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     background: rgb(255, 255, 255) !important;
-=======
-<<<<<<< HEAD
-=======
     background: rgba(255, 255, 255, 0) !important;
 }
 .input::placeholder{
     background-color: none;
     color: #fff;
->>>>>>> 4e2202d75a3c75fb10be24e46c56e6b0efc97efc
->>>>>>> 1cdb739912085330c3bf2d76db8383d0159e32e6
->>>>>>> 1cac38aa5a954f1aabac67b8206f318b8bd574a9
->>>>>>> b2f7e9aeaf48c21f41dce03e39728cf063ed0ba0
 }
 
 
@@ -103,4 +94,10 @@
 }
 .modern-solutions p{
     font-size: 40px;
+}
+
+.login-butt{
+    border: none;
+    text-decoration: none;
+    list-style: none;
 }

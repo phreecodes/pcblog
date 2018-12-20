@@ -1,7 +1,5 @@
 <?php
-session_start();
-
-include "checkSession.php";
+session_abort();
 
 ?>
 
@@ -20,8 +18,10 @@ include "checkSession.php";
 <body>
     
     <section id="registration">
+    <?php include_once('header.php'); ?>
+      
 
-        <div class="container">
+        <div class="container registration">
             <div class="row">
                 <div class="col-md-6">
                     <div class="modern-solutions">
@@ -60,6 +60,7 @@ include "checkSession.php";
                             <input type="text" name="password" placeholder="Password" class="input">
                             <input type="text" name="confirmpassword" placeholder="confirmPassword" class="input">
                             <button type="submit" class="btn btn-primary register-acc-butt">Register Account</button>
+                            <p class="text-light text-center mt-3">Already have an Account? <a href="index.php"><button type="button" class="bg-light login-butt">  Login </button></a></p>
                         </form>
                     </div>
                 </div>
