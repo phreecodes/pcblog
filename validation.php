@@ -14,14 +14,6 @@ $confirmPassword = $_POST['confirmpassword'];
 
 // include('connection.php');
 
-<<<<<<< HEAD
-// $_SESSION['errors'] = [];
-=======
-// // $_SESSION['errors'] = [];
->>>>>>> ba1e10ccbdf5858abfb0dede6f72cd05c9fd2915
-// $_SESSION['user_id'] = $_GET['id'];
-// var_dump($_SESSION['user_id']);
-// exit;
 
 if(empty($firstName)){
     $_SESSION['error'] = "Please input first name";
@@ -122,10 +114,5 @@ if($user){
 
 
 include('insert.php');
-<<<<<<< HEAD
-// header("location: index2.php");
-exit;
-=======
 header("location: index2.php");
 exit;
->>>>>>> ba1e10ccbdf5858abfb0dede6f72cd05c9fd2915

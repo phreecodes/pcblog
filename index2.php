@@ -58,7 +58,7 @@ session_abort();
                             <input type="text" name="email" placeholder="Email" class="input">
                             <input type="text" name="phonenumber" placeholder="Phone Number" class="input">
                             <input type="password" name="password" placeholder="Password" class="input">
-                            <input type="text" name="confirmpassword" placeholder="confirmPassword" class="input">
+                            <input type="password" name="confirmpassword" placeholder="confirmPassword" class="input">
                             <button type="submit" class="btn btn-primary register-acc-butt">Register Account</button>
                             <p class="text-light text-center mt-3">Already have an Account? <a href="login.php"><button type="button" class="bg-light login-butt">  Login </button></a></p>
                         </form>
