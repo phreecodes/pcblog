@@ -15,7 +15,7 @@
 }
 </style>
 <section class="bg-dark">
-    <footer class="container">
+    <footer class="container mb-5">
 
         <div class="d-flex justify-content-center align-item-center">
             <img src="images/HP_logo.png" alt="logo" height="50px">
@@ -25,10 +25,10 @@
         <div>
             <p class="d-flex justify-content-center align-item-center text-white">For more information you can contact the Admin</p>
             <div class="d-flex justify-content-center align-item-center">
-                <button class="mr-2  btn-dark"><a href="https://www.facebook.com/evidence.ekanem.75" class="fab fa-facebook text-white"><span class="mx-2 text-white">Facebook<span></a></button>
-                <button class="mr-2 btn-dark"><a href="https://twitter.com/EkanemEvidence?=09" class="fab fa-twitter text-white"><span class="mx-2 text-white">Twitter<span></a></button>
-                <button class="mr-2  btn-dark"><a href="https://www.linkedin.com/in/evidence-ekanem-125b37155" class="fab fa-linkedin text-white"><span class="mx-2 text-white">LinkedIn<span></a></button>
-                <button class="btn-dark"><a href="https://www.instagram.com/p/Bm1mJHQFHzy/?utm_source=ig_share_sheet&igshid=neexu9q3zqb2" class="fab fa-instagram text-white"><span class="mx-2 text-white">Instagram<span></a></button>                                  
+                <button class="mr-2  btn-dark py-1 px-2"><a href="https://www.facebook.com/evidence.ekanem.75" class="fab fa-facebook text-white"><span class="mx-2 text-white">Facebook<span></a></button>
+                <button class="mr-2 btn-dark py-1 px-2"><a href="https://twitter.com/EkanemEvidence?=09" class="fab fa-twitter text-white"><span class="mx-2 text-white">Twitter<span></a></button>
+                <button class="mr-2  btn-dark py-1 px-2"><a href="https://www.linkedin.com/in/evidence-ekanem-125b37155" class="fab fa-linkedin text-white"><span class="mx-2 text-white">LinkedIn<span></a></button>
+                <button class="btn-dark py-1 px-2"><a href="https://www.instagram.com/p/Bm1mJHQFHzy/?utm_source=ig_share_sheet&igshid=neexu9q3zqb2" class="fab fa-instagram text-white"><span class="mx-2 text-white">Instagram<span></a></button>                                  
             </div>                      
         </div>
         

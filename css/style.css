@@ -54,8 +54,26 @@
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #fff;
+<<<<<<< HEAD
     background-color: rgb(255, 255, 255) !important;
     /* background: rgba(255, 255, 255, 0) !important; */
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    background: rgb(255, 255, 255) !important;
+=======
+<<<<<<< HEAD
+=======
+    background: rgba(255, 255, 255, 0) !important;
+}
+.input::placeholder{
+    background-color: none;
+    color: #fff;
+>>>>>>> 4e2202d75a3c75fb10be24e46c56e6b0efc97efc
+>>>>>>> 1cdb739912085330c3bf2d76db8383d0159e32e6
+>>>>>>> 1cac38aa5a954f1aabac67b8206f318b8bd574a9
+>>>>>>> b2f7e9aeaf48c21f41dce03e39728cf063ed0ba0
 }
 
 
