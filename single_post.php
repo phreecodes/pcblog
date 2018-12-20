@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include "header.php";
 include_once("connection.php");
 $id = $_GET['id'];
@@ -8,6 +9,25 @@ foreach($posts as $key=>$post)
 $getUser = "SELECT * FROM users"
 ?>
 
+=======
+<?php
+    $id = (int) $_GET['id'];
+    include_once "connection.php";
+    $sql = "SELECT * FROM posts WHERE id=$id";
+
+    $result = $conn->query($sql);
+
+    $post = $result->fetch(PDO::FETCH_ASSOC);
+
+    if(!$post) {
+        header("HTTP/1.0 404 Not Found");
+        exit;
+    }
+
+    include "header.php";
+
+?>
+>>>>>>> 52d058877d28f28b5f53a63309450baaca9c528d
 <section role="main" class="container">
     <div class="row">
         <div class="col-md-8 blog-main">
