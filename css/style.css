@@ -57,7 +57,8 @@
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #fff;
-    background-color: rgb(255, 255, 255) !important;
+    color: #fff;
+    /* background-color: rgb(255, 255, 255) !important; */
     /* background: rgba(255, 255, 255, 0) !important; */
     /* background-color: rgb(255, 255, 255) !important; */
     background: rgba(255, 255, 255, 0) !important;

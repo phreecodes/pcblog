@@ -27,7 +27,8 @@
     outline: none;
 }
 .input::placeholder{
-    background-color: none !important;
+    background-color: #fff !important;
+    color: #fff;
 }
 .cardSection{
     height: 500px;

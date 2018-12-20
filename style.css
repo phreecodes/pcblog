@@ -1,5 +1,7 @@
 
-
+#registrations{
+    background: linear-gradient(rgb(87, 87, 87, 0.5), rgb(100, 100, 100, 0.5)), url(images/red-back.jpg);
+}
 .loginSection{
     height: 650px;
 }

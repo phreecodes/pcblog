@@ -20,7 +20,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             
-            <img src="images/HP_logo.png" alt="logo" height="50px">
+            <img src="images/logo2.png" alt="logo" height="50px" style="border-radius:50%;">
             <!-- <i class="fa fa-btc" height=""></i> -->
             <a class="navbar-brand ml-2 font-weight-bold" href="#">BLOG</a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">

@@ -34,7 +34,7 @@ $getUser = "SELECT * FROM users"
 
             <div class="blog-post">
                 <h2 class="blog-post-title"><?=$post['title']; ?></h2>
-                <p class="blog-post-meta"><?=date("M d, Y", strtotime($post['post_date'])); ?> by <a href="//twiter.com/EkanemEvidence?=09"> by <small class="text-danger"> <?= $_SESSION['username']; ?></small></a></p>
+                <p class="blog-post-meta"><?=date("M d, Y", strtotime($post['post_date'])); ?></p>
 
                 <p>
                     <?=$post['content']; ?>
