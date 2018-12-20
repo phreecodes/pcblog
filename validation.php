@@ -2,6 +2,9 @@
 
 session_start();
 
+include('connection.php');
+
+
 $firstName = $_POST['firstname'];
 $lastName = $_POST['lastname'];
 $userName = $_POST['username'];
@@ -44,7 +47,7 @@ if(empty($userName)){
     exit;
 }
 
-if(!preg_match("/^[A-Za-z][0-9]/", $userName)){
+if(!preg_match("/^[A-Za-z][A-Za-z0-9]/", $userName)){
     $_SESSION['error'] = "Invalid Username";
     header("location: index2.php");
     exit;
@@ -101,6 +104,16 @@ if($password !== $confirmPassword){
     header("location: index2.php");
     exit;
 }
+$checkUser = "SELECT * FROM users WHERE username = '$userName'";
+$result = $conn->query($checkUser);
+$user = $result->fetch(PDO::FETCH_ASSOC);
+
+if($user){
+    $_SESSION['error'] = "Username already exists. Please choose a different username";
+    header("location: index2.php");
+    exit;
+};
+
 
 include('insert.php');
 header("location: index2.php");

@@ -1,9 +1,7 @@
 <?php
 
-include("connection.php");
-
 $sql = "INSERT INTO users (firstname, lastname, username, email, phonenumber, password, confirmpassword)
- VALUES ('$firstName', '$lastName', $username, '$email', '$phoneNumber', '$password', '$confirmPassword')";
+ VALUES ('$firstName', '$lastName', '$userName', '$email', '$phoneNumber', '$password', '$confirmPassword')";
 
 $done = $conn->exec($sql);
 
