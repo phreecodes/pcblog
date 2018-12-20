@@ -28,7 +28,7 @@ $posts = $result->fetchAll(PDO::FETCH_ASSOC);
         <div class="col-md-6 mb-3">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-tittle"> <?= $post['title']; ?> by <small class="text-danger"> <?= $_SESSION['username']; ?></small></h4>
+              <h4 class="card-tittle"> <?= $post['title']; ?> <small class="text-danger"> <?= $_SESSION['username']; ?></small></h4>
               <p><?=date("M d", strtotime($post['post_date'])); ?></p>
             </div>
             <div class="card-body">

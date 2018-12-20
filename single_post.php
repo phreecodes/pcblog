@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php include "header.php";
 include_once("connection.php");
 $id = $_GET['id'];
@@ -9,7 +8,6 @@ foreach($posts as $key=>$post)
 $getUser = "SELECT * FROM users"
 ?>
 
-=======
 <?php
     $id = (int) $_GET['id'];
     include_once "connection.php";
@@ -24,10 +22,9 @@ $getUser = "SELECT * FROM users"
         exit;
     }
 
-    include "header.php";
+    // include "header.php";
 
 ?>
->>>>>>> 52d058877d28f28b5f53a63309450baaca9c528d
 <section role="main" class="container">
     <div class="row">
         <div class="col-md-8 blog-main">
@@ -37,7 +34,7 @@ $getUser = "SELECT * FROM users"
 
             <div class="blog-post">
                 <h2 class="blog-post-title"><?=$post['title']; ?></h2>
-                <p class="blog-post-meta"><?=date("M d, Y", strtotime($post['post_date'])); ?> by <a href="//twiter.com/EkanemEvidence?=09">Evidoski</a></p>
+                <p class="blog-post-meta"><?=date("M d, Y", strtotime($post['post_date'])); ?> by <a href="//twiter.com/EkanemEvidence?=09"> by <small class="text-danger"> <?= $_SESSION['username']; ?></small></a></p>
 
                 <p>
                     <?=$post['content']; ?>
