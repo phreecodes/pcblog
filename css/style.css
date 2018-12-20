@@ -59,11 +59,11 @@
     border: 1px solid #fff;
     background-color: rgb(255, 255, 255) !important;
     /* background: rgba(255, 255, 255, 0) !important; */
-    background: rgb(255, 255, 255) !important;
+    /* background-color: rgb(255, 255, 255) !important; */
     background: rgba(255, 255, 255, 0) !important;
 }
 .input::placeholder{
-    background-color: none;
+    /* background-color: none; */
     color: #fff;
 }
 
